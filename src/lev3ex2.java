@@ -29,12 +29,19 @@ import java.util.Scanner;
 public class lev3ex2 {
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
-        int number = scanner.nextInt();
-        int sum;
-
-        for (number = 0; number >=0; number++){
-            System.out.println(number+number);
+        int number1 = scanner.nextInt();
+        int number2 = scanner.nextInt();
+        int number3 = scanner.nextInt();
+        int counter = 0;
+        if (number1 > 0) {
+            counter++;
         }
-
+        if (number2 > 0) {
+            counter++;
+        }
+        if (number3 > 0) {
+            counter++;
+        }
+        System.out.println(counter);
     }
 }
