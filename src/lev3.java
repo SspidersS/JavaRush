@@ -20,8 +20,11 @@ import java.util.Scanner;
 
 public class lev3 {
     public static void main(String[] args) throws Exception {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int number = Integer.parseInt(reader.readLine());
+//        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+//        int number = Integer.parseInt(reader.readLine());
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
+
         if (number > 0 && number < 10 && number % 2 == 0) {
             System.out.println("четное однозначное число");
         } else if (number > 0 && number < 10 && number % 2 != 0) {
